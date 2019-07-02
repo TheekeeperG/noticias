@@ -1,0 +1,10 @@
+<ion-card style="height: 100%">
+  <ion-card-header>
+    <ion-card-title class="txtTitle">{{articulo.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-img [src]="articulo.urlToImage" *ngIf="articulo.urlToImage"></ion-img>
+  <ion-card-content class="txtGeneral">
+    {{articulo.description}}
+  </ion-card-content>
+  <ion-card-subtitle  style="margin-bottom:0%" class="txtSubtitle">{{articulo.source.name}}</ion-card-subtitle>
+</ion-card>
